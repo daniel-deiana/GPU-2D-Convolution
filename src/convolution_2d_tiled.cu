@@ -13,7 +13,8 @@
 const int TILE_SIZE = 16;
 const int MASK_SIZE = 5;
 
-__global__ void convolution_2d_tiled(float *A, int width, int height, float *F, float *P) {
+__global__ void convolution_2d_tiled(float *A, int width, 
+                                     int height, float *F, float *P) {
 
   int const MASK_OFFSET = MASK_SIZE/2;
 
